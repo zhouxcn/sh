@@ -21,16 +21,15 @@ parse_json(){
 value=$(parse_json $result "images")
 
 echo "今日图片地址: ${value}"
-echo "获取今日图片地址成功!!!"
-echo "开始下载文件..."
 
 # 下载文件
+echo "开始下载文件..."
+
 curl -o /home/zhou/Pictures/${time}.jpg https://www.bing.com/${value}
+
 echo "下载文件成功!!!"
 
 # 设置壁纸
-echo "开始设置壁纸..."
-
 downloadPath=/home/zhou/Pictures/${time}.jpg
 gsettings set org.gnome.desktop.background picture-uri "file:${downloadPath}"
 
