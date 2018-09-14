@@ -4,8 +4,9 @@
 # 获取当前日期,用做下载壁纸的文件名
 time=$(date "+%Y-%m-%d")
 
-echo ${time}
-echo "开始获取图片地址..."
+echo "今天,又是元气满满的一天,做点什么呢?"
+echo "好看的壁纸才会有好的心情!先获取一张美美的壁纸!"
+echo ""
 
 # 获取壁纸Api返回json数据
 url="https://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1"
@@ -20,17 +21,31 @@ parse_json(){
 # 获取图片地址
 value=$(parse_json $result "images")
 
-echo "今日图片地址: ${value}"
-
 # 下载文件
-echo "开始下载文件..."
-
 curl -o /home/zhou/Pictures/${time}.jpg https://www.bing.com/${value}
-
-echo "下载文件成功!!!"
-
 # 设置壁纸
 downloadPath=/home/zhou/Pictures/${time}.jpg
 gsettings set org.gnome.desktop.background picture-uri "file:${downloadPath}"
 
-echo "设置壁纸成功!!!"
+echo ""
+
+echo "有了美美的壁纸,接下来开始发呆吧..."
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "呆"
+echo "."
+echo "."
+echo "."
