@@ -28,7 +28,6 @@ downloadPath=/home/zhou/Pictures/${time}.jpg
 gsettings set org.gnome.desktop.background picture-uri "file:${downloadPath}"
 
 echo ""
-
 echo "有了美美的壁纸,接下来开始发呆吧..."
 echo "呆"
 echo "呆"
