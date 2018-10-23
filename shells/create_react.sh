@@ -1,7 +1,7 @@
 #!/bin/bash
 # 快速创建react项目
-# 使用方式 './create_react.sh ${project_name} ${js_or_ts}'
-# 默认创建ts版本
+# 使用方式 ./create_react.sh ${project_name} ${js_or_ts}
+# 默认创建ts版本，默认已安装create-react-app
 
 if [ $# == 1 ]
 then
