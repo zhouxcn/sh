@@ -1,4 +1,4 @@
-Sh
+Shell脚本
 ===
 
 # wallpaper.sh
