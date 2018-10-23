@@ -1,9 +1,12 @@
 #!/bin/bash
-
+# 查看pm2 log文件
+# 使用方式 ./pm2_logs.sh ${project_name} ${file_type}
 # 根据第一个参数获取服务名称
 # 根据第二个参数获取文件类型
+
 service_name=''
 file_type=''
+
 function parse_service_name() {
     case $1 in
         app) service_name='AppServer'
